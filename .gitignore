@@ -1,0 +1,95 @@
+# Ignore the target directory, which is used for compiled output.
+**/target/
+
+# Ignore the Cargo.lock file, which is generated automatically.
+**/Cargo.lock
+
+# Ignore backup files created by editors.
+*.rs.bk
+*.swp
+*.swo
+
+# Ignore the output of `cargo test` runs.
+**/test-*.exe
+**/test-*.exe.*
+**/test-*.dSYM/
+**/test-*.dSYM/**
+
+# Ignore the output of `cargo bench` runs.
+**/bench-*.exe
+**/bench-*.exe.*
+**/bench-*.dSYM/
+**/bench-*.dSYM/**
+
+# Ignore the output of `cargo doc` runs.
+**/target/doc/
+
+# Ignore the output of `cargo build` runs.
+**/target/debug/
+**/target/release/
+
+# Ignore the output of `cargo clippy` runs.
+**/target/clippy/
+
+# Ignore the output of `cargo fmt` runs.
+**/target/fmt/
+
+# Ignore the output of `cargo tarpaulin` runs.
+**/target/tarpaulin/
+
+# Ignore the output of `cargo audit` runs.
+**/target/audit/
+
+# Ignore the output of `cargo udeps` runs.
+**/target/udeps/
+
+# Ignore the output of `cargo outdated` runs.
+**/target/outdated/
+
+# Ignore the output of `cargo tree` runs.
+**/target/tree/
+
+# Ignore the output of `cargo expand` runs.
+**/target/expand/
+
+# Ignore the output of `cargo flamegraph` runs.
+**/target/flamegraph/
+
+# Ignore the output of `cargo llvm-cov` runs.
+**/target/llvm-cov/
+
+# Ignore the output of `cargo kcov` runs.
+**/target/kcov/
+
+# Ignore the output of `cargo fuzz` runs.
+**/target/fuzz/
+
+# Ignore the output of `cargo miri` runs.
+**/target/miri/
+
+# macOS specific ignores
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
