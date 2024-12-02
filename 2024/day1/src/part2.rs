@@ -2,6 +2,7 @@ use std::collections::HashMap;
 use std::fs;
 use std::io::{self, BufRead};
 
+// O(n * m)
 fn calculate_total_sum(file_path: &str) -> Result<i32, io::Error> {
     let file = fs::File::open(file_path)?;
     let reader = io::BufReader::new(file);
@@ -36,7 +37,7 @@ fn calculate_total_sum(file_path: &str) -> Result<i32, io::Error> {
 }
 
 fn main() {
-    let file_path = "src/input.txt";
+    let file_path = "input.txt";
 
     match calculate_total_sum(file_path) {
         Ok(total_sum) => println!("Total sum: {}", total_sum),

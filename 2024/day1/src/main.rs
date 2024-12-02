@@ -34,7 +34,7 @@ fn calculate_total_sum(file_path: &str) -> Result<i32, io::Error> {
 }
 
 fn main() {
-    let file_path = "src/input.txt";
+    let file_path = "input.txt";
 
     match calculate_total_sum(file_path) {
         Ok(total_sum) => println!("Total sum: {}", total_sum),
