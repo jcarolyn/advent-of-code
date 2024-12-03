@@ -13,7 +13,7 @@ fn analyze_reports(file_path: &str) -> Result<i32, io::Error> {
 
     for line in reader.lines() {
         let line = line?;
-        // Split each line via whitespace
+
         let levels: Vec<i32> = line.split_whitespace()
             .map(|n| n.parse().unwrap())
             .collect();
@@ -23,7 +23,7 @@ fn analyze_reports(file_path: &str) -> Result<i32, io::Error> {
         let mut is_safe: bool = true;
 
         // Windows allows you to create an iterator over a specific sized slice of vector
-        // in this case, the slice is size 2 so we can compare adjacent numbers
+        // in this case, we create a slice of size 2 so we can compare adjacent numbers
         for window in levels.windows(2) {
             let diff = window[0] - window[1];
 
