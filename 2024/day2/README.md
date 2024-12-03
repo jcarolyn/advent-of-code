@@ -8,5 +8,4 @@ You can find the problem description [here](https://adventofcode.com/2024/day/2)
 
 To run the solution, use the following commands:
 
-# part 1
 > cargo run
